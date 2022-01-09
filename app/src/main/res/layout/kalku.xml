@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:background="#006922"
+		android:elevation="15dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="BAJU"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:textSize="30sp"
+			android:id="@+id/judul2"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Panjang Baju"
+			android:id="@+id/kalkuTextView1"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="10dp"
+			android:textStyle="normal"
+			android:textSize="17sp"/>
+
+		<EditText
+			android:layout_width="100dp"
+			android:inputType="number|numberDecimal"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:gravity="center"
+			android:layout_alignParentEnd="true"
+			android:layout_marginEnd="10dp"
+			android:hint="Panjang"
+			android:textSize="15sp"
+			android:id="@+id/pjg"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Lebar Bahu"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/kalkuTextView2"
+			android:layout_centerVertical="true"
+			android:textSize="17sp"/>
+
+		<EditText
+			android:layout_width="100dp"
+			android:inputType="number|numberDecimal"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_alignParentRight="true"
+			android:gravity="center"
+			android:textSize="15sp"
+			android:hint="Bahu"
+			android:id="@+id/bhu"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Lekuk Dada"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/kalkuTextView3"
+			android:layout_centerVertical="true"
+			android:textSize="17sp"/>
+
+		<EditText
+			android:layout_width="100dp"
+			android:inputType="number|numberDecimal"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:gravity="center"
+			android:layout_alignParentEnd="true"
+			android:hint="Dada"
+			android:textSize="15sp"
+			android:id="@+id/dda"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="10dp"
+		android:layout_marginStart="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Lekuk Perut"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/kalkuTextView4"
+			android:layout_centerVertical="true"
+			android:textSize="17sp"/>
+
+		<EditText
+			android:layout_width="100dp"
+			android:inputType="numberDecimal"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_alignParentEnd="true"
+			android:hint="Perut"
+			android:textSize="15sp"
+			android:gravity="center"
+			android:id="@+id/prt"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Lekuk Pinggul"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/kalkuTextView5"
+			android:layout_centerVertical="true"
+			android:textSize="17sp"/>
+
+		<EditText
+			android:layout_width="100dp"
+			android:inputType="number|numberDecimal"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:gravity="center"
+			android:layout_alignParentEnd="true"
+			android:hint="Pinggul"
+			android:textSize="15sp"
+			android:id="@+id/pgl"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Panjang Tangan"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/kalkuTextView6"
+			android:layout_centerVertical="true"
+			android:textSize="17sp"/>
+
+		<EditText
+			android:layout_width="100dp"
+			android:inputType="number|numberDecimal"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:gravity="center"
+			android:layout_alignParentEnd="true"
+			android:hint="Tangan"
+			android:textSize="15sp"
+			android:id="@+id/tgn"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Lekuk Ketiak"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/kalkuTextView7"
+			android:layout_centerVertical="true"
+			android:textSize="17sp"/>
+
+		<EditText
+			android:layout_width="100dp"
+			android:inputType="number|numberDecimal"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:gravity="center"
+			android:layout_alignParentEnd="true"
+			android:hint="Ketiak"
+			android:textSize="15sp"
+			android:id="@+id/ktk"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Lekuk Bawah Tangan"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/kalkuTextView8"
+			android:layout_centerVertical="true"
+			android:textSize="17sp"/>
+
+		<EditText
+			android:layout_width="100dp"
+			android:inputType="number|numberDecimal"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:gravity="center"
+			android:layout_alignParentEnd="true"
+			android:hint="Lingkar Tangan"
+			android:textSize="15sp"
+			android:id="@+id/lbt"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp">
+
+		<Spinner
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/jenis"
+			android:dropDownVerticalOffset="10dp"
+			android:layout_marginLeft="10dp"/>
+
+		<Switch
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:id="@+id/ssatuan"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="10dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="inch"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_toLeftOf="@id/ssatuan"
+			android:layout_marginRight="5dp"
+			android:layout_centerVertical="true"
+			android:id="@+id/satuan"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Hasil"
+			android:layout_centerHorizontal="true"
+			android:background="#DFDFDF"
+			android:onClick="hasil"
+			android:id="@+id/hasil"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+
