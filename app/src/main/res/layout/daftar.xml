@@ -44,7 +44,7 @@
 				android:elevation="10dp"
 				android:textSize="15sp"
 				android:textStyle="bold"
-				android:background="@drawable/image_1"/>
+				android:background="@drawable/baju"/>
 
 			<Button
 				android:layout_width="match_parent"
@@ -52,11 +52,11 @@
 				android:text="Baju"
 				android:textColor="#000000"
 				android:textSize="15sp"
-				android:textStyle="bold"
-				android:background="#D5D5D5"
 				android:elevation="50dp"
 				android:id="@+id/baju"
-				android:onClick="baju"/>
+				android:onClick="baju"
+				android:textStyle="normal"
+				android:background="#D5D5D5"/>
 
 		</LinearLayout>
 
@@ -73,7 +73,7 @@
 				android:elevation="10dp"
 				android:textSize="15sp"
 				android:textStyle="bold"
-				android:background="@drawable/clna"/>
+				android:background="@drawable/celana"/>
 
 			<Button
 				android:layout_width="match_parent"
@@ -83,7 +83,7 @@
 				android:background="#D5D5D5"
 				android:elevation="50dp"
 				android:textSize="15sp"
-				android:textStyle="bold"/>
+				android:textStyle="normal"/>
 
 		</LinearLayout>
 

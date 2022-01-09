@@ -21,6 +21,8 @@ public class MainActivity extends Activity
 	String sat;
 	String pjg2;
 	EditText pjgg;
+	int col = Color.parseColor("#ABD3FE");
+	
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -44,27 +46,18 @@ public class MainActivity extends Activity
 	public void kalku(){
 		setContentView(R.layout.kalku);
 		Spinner spinner = findViewById(R.id.jenis);
+		Spinner spinner2 = findViewById(R.id.jenis_tangan);
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.jenis_baju, android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);
+		ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.jenis_tangan, android.R.layout.simple_spinner_item);
+		adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner2.setAdapter(adapter2);
 		d = 1;
 		tes3();
 		TextView judu = findViewById(R.id.judul2);
 		Typeface ff = Typeface.createFromAsset(getAssets(), "fonts/ro.ttf");
 		judu.setTypeface(ff);
-		Switch toggle = findViewById(R.id.ssatuan);
-		toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-				public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-					TextView tx = findViewById(R.id.satuan);
-					if (isChecked) {
-						tx.setText("cm");
-						sat = "cm";
-					} else {
-						tx.setText("inch");
-						sat="inch";
-					}
-				}
-			});
 	}
 	
 	public void hasil(View view){
@@ -86,7 +79,7 @@ public class MainActivity extends Activity
 					Button b = findViewById(R.id.celana);
 
 					if (event.getAction() == MotionEvent.ACTION_DOWN) {
-						b.setBackgroundColor(Color.YELLOW);
+						b.setBackgroundColor(col);
 					}
 					else if (event.getAction() == MotionEvent.ACTION_UP) {
 						b.setBackgroundColor(Color.parseColor("#D5D5D5"));
@@ -111,7 +104,7 @@ public class MainActivity extends Activity
 					Button b = findViewById(R.id.baju);
 
 					if (event.getAction() == MotionEvent.ACTION_DOWN) {
-						b.setBackgroundColor(Color.YELLOW);
+						b.setBackgroundColor(col);
 					}
 					else if (event.getAction() == MotionEvent.ACTION_UP) {
 						b.setBackgroundColor(Color.parseColor("#D5D5D5"));
@@ -154,7 +147,7 @@ public class MainActivity extends Activity
 					Button b = findViewById(R.id.hasil);
 
 					if (event.getAction() == MotionEvent.ACTION_DOWN) {
-						b.setBackgroundColor(Color.YELLOW);
+						b.setBackgroundColor(col);
 					}
 					else if (event.getAction() == MotionEvent.ACTION_UP) {
 						b.setBackgroundColor(Color.parseColor("#D5D5D5"));

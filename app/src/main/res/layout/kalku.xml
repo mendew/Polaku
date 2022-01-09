@@ -260,26 +260,13 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/jenis"
-			android:dropDownVerticalOffset="10dp"
-			android:layout_marginLeft="10dp"/>
+			android:dropDownVerticalOffset="10dp"/>
 
-		<Switch
+		<Spinner
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_alignParentEnd="true"
-			android:id="@+id/ssatuan"
-			android:layout_centerVertical="true"
-			android:layout_marginEnd="10dp"/>
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="inch"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:layout_toLeftOf="@id/ssatuan"
-			android:layout_marginRight="5dp"
-			android:layout_centerVertical="true"
-			android:id="@+id/satuan"/>
+			android:layout_toRightOf="@id/jenis"
+			android:id="@+id/jenis_tangan"/>
 
 	</RelativeLayout>
 
